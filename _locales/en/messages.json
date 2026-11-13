@@ -1,0 +1,10 @@
+{
+  "extDescription": {
+    "message": "On an X image carousel, the mouse wheel moves between images. Choose whether it returns to the timeline at either end.",
+    "description": "Extension description shown on the browser's extensions page."
+  },
+  "actionTitle": {
+    "message": "xyokoscroll settings",
+    "description": "Tooltip for the toolbar icon."
+  }
+}

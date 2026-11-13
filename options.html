@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>xyokoscroll settings</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: Canvas;
+        color: CanvasText;
+      }
+      body {
+        box-sizing: border-box;
+        width: 340px;
+        padding: 16px 18px 18px;
+        font: 14px/1.55 system-ui, sans-serif;
+        visibility: hidden;
+      }
+      body.ready {
+        visibility: visible;
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .check {
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        cursor: pointer;
+      }
+      .check input {
+        flex: none;
+        margin-top: 3px;
+      }
+      p {
+        margin: 10px 0 0;
+        color: GrayText;
+        font-size: 12px;
+      }
+      .language {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 14px;
+      }
+      select {
+        font: inherit;
+        color: CanvasText;
+        background: Canvas;
+        max-width: 190px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>xyokoscroll</h1>
+    <label class="check">
+      <input id="release" type="checkbox" checked />
+      <span id="release-label">Past the first or last image, scroll the timeline vertically</span>
+    </label>
+    <p id="hint">
+      When this is on, the wheel scrolls the timeline after the carousel reaches either end. When it is off, the wheel stops at the end while the pointer is over the image. Move the pointer off the image to scroll the timeline.
+    </p>
+    <div class="language">
+      <label for="language" id="language-label">Language</label>
+      <select id="language">
+        <option value="auto">Browser language</option>
+        <option value="ja">日本語</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
